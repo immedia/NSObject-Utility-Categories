@@ -246,7 +246,7 @@
 	// return c-string
 	if (strcmp(returnType, @encode (char*)) == 0)
 	{
-		char *s;
+		char *s = NULL;
 		[inv getReturnValue:s];
 		return [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
 	}
